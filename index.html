@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p7_grids_from_graphic</title>
+</head>
+<Style>
+@import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
+.geom-tipo {
+  font-family: "Geom", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.big_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Geom", sans-serif;
+  background-color: #A535BB;
+}
+.container{
+  font-family: "Geom", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: 50vw;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template: repeat(3,1fr) 1fr 1fr 1fr / repeat(3,1fr);
+  background: grey;
+}
+#groc_espai{
+  grid-area: 1/3/4/4;
+  background-color: #FDF46E;
+}
+ #groc_triangleblau{
+  position: relative;
+  grid-area: 2/3/4/4;
+  background: url(assets/Mesa\ de\ trabajo\ 1.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  }
+  #text_triangleblau{
+    position: absolute;
+    font-size: 0.7rem;
+    transform: rotate(-90deg);
+    bottom: 50px;
+    left: -50px;
+  }
+#dj1{
+  background: #FDF46E;
+  grid-area: 1/1/3/3;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+#dj2{
+  background: #7CB377;
+  grid-area: 2/1/3/3;
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+#dj3{
+  background: #A535BB;
+  grid-area: 3/1/3/3;
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+#morat_espai{
+  background: #A535BB;
+  grid-area: 4/2/5/4;
+}
+#verd_espai{
+  background: #7CB377;
+  grid-area: 5/1/6/3;
+}
+#verd_triangleblau {
+  background: url(assets/Mesa\ de\ trabajo\ 1\ copia.svg);
+  grid-area: 4/1/5/2;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: top 0 bottom 0 ;
+}
+#nom{
+  background: #7CB377;
+  grid-area: 6/1/7/2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#data{
+  grid-area: 6/2/7/4;
+  padding-top: 10px;
+  padding-left: 25px;
+  background: url(assets/Mesa\ de\ trabajo\ 1\ copia\ 2.svg) no-repeat center;
+  grid-area: 6/2/7/3;
+  background-size: cover;
+}
+#blau_espai{
+  background: blue;
+  grid-area: 5/3/7/4; 
+}
+#hora{
+  grid-area: 6/2/7/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: end;  
+  padding-top: 80px;
+  padding-left: 25px;
+}
+</Style>
+<body>
+<div class="big_container">
+<div class="container">
+  <div id="dj1"><p>KILO KISH (US, LIVE)</p></div>
+  <div id="groc_espai"></div>
+  <div id="groc_triangleblau">
+    <div id="text_triangleblau">14,BLDG.5A, <BR/>BERSENEVSKAYA EMB.</div>
+  </div>
+  <div id="dj2"> <p>MUJUICE (DJ-SET)</p></div>
+  <div id="dj3"><p>KIRILL IVANOV <br/>(SBPCH, DJ-SET)</p></div>
+  <div id="morat_espai"></div>
+  <div id="verd_espai"></div>
+  <div id="verd_triangleblau"></div>
+  <div id="nom"><P>STRELKA</P></div>
+  <div id="data"><p>10.06</p></div>
+  <div id="blau_espai"></div>
+  <div id="hora"><p>23:00</p></div>
+</div>
+</div>
+</body>
+</html>
